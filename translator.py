@@ -33,7 +33,7 @@ def get_output():
     translator=google_translator()
     txt = text.get('1.0', 'end')
     ans=translator.translate(txt, lang_tgt=Dict[langs.get()])
-    output.insert(0.0, ans)
+    output.insert(1.0, ans)
 
 
 translate_btn = Button(in_frame, text = 'TRANSLATE', command=get_output, font = ("times new roman", 15, "bold"))
